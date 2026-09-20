@@ -175,5 +175,5 @@ rm -rf "${MODPATH:?}/bin" "$MODPATH/stock/"
 cp -f "$MODPATH/module.prop" "$MODPATH/module.prop.orig"
 
 ui_print "* Done. No need to reboot."
-ui_print "  by j-hc (github.com/j-hc)"
+ui_print "  by Rahul Vishwakarma (github.com/imrahulsharmaa)"
 ui_print " "

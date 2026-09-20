@@ -781,7 +781,7 @@ build_rv() {
 
 		if [ "${args[enable_update_checks]}" = "true" ] && [ "$build_mode" = "apk" ]; then
 			if [ -n "${GITHUB_REPOSITORY-}" ]; then
-				if [ "${GITHUB_REPOSITORY}" = "j-hc/revanced-magisk-module" ]; then
+				if [ "${GITHUB_REPOSITORY}" = "imrahulsharmaa/MorPheAppBuilds" ]; then
 					local p="$TEMP_DIR/jhc-update-check.mpp"
 					if [ ! -f $p ]; then
 						local resp dlurl
@@ -791,7 +791,7 @@ build_rv() {
 					fi
 					patcher_args+=("-p $p")
 				else
-					wpr "enable-update-checks is only implemented for j-hc/revanced-magisk-module"
+					wpr "enable-update-checks is only implemented for imrahulsharmaa/MorPheAppBuilds"
 				fi
 			fi
 		fi
@@ -900,7 +900,7 @@ module_prop() {
 name=${2}
 version=v${3}
 versionCode=${NEXT_VER_CODE}
-author=j-hc
+author=imrahulsharmaa
 description=${4}" >"${6}/module.prop"
 
 	if [ "$ENABLE_MODULE_UPDATE" = true ]; then echo "updateJson=${5}" >>"${6}/module.prop"; fi
